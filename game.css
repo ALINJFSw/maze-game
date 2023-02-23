@@ -136,5 +136,7 @@ neighboring elements.  Necessary to avoid giving ids to the boundary divs
 }
 
 .reset {
-
+	position: absolute;
+	left : 47%;
+	bottom: 7%;
 }

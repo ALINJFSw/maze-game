@@ -1,6 +1,6 @@
 window.onload = () => {
   var status;
-  var score = 100;
+  var score = 0;
   var start = document.getElementById("start");
   var status_board = document.getElementById("status");
   var b1 = document.getElementsByClassName("boundary")[0];
@@ -23,11 +23,12 @@ window.onload = () => {
     score = 0;
     showScore(score);
   });
-
-  score_board.append(reset);
+  
+  document.body.append(reset);
   const showScore = (s_core) => {
     score_board.innerHTML = "your score = " + s_core;
   };
+  showScore(score)
   status_board.innerHTML = "press S to play";
 
   const maze = (event) => {
