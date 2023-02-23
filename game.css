@@ -134,3 +134,7 @@ neighboring elements.  Necessary to avoid giving ids to the boundary divs
 	color: rgb(20, 24, 27);
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.reset {
+
+}
