@@ -14,6 +14,8 @@ window.onload = () => {
   var rect3 = b3.getBoundingClientRect();
   var rect4 = b4.getBoundingClientRect();
   var rect5 = b5.getBoundingClientRect();
+  const start_boundry = start.getBoundingClientRect()
+  const end_boundry = end.getBoundingClientRect()
   var score_board = document.getElementsByClassName("example")[0];
   score_board.classList.add("score-board");
   var reset = document.createElement("button");
@@ -39,6 +41,10 @@ window.onload = () => {
   const playMaze = (event) => {
     var xPos = event.clientX;
     var yPos = event.clientY;
+    if (xPos < start_boundry.left || xPos > end_boundry.right){
+      loseGame()
+    }
+      
 
     if (
       xPos < rect1.right &&
